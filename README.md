@@ -1,4 +1,4 @@
-# AWS EC2 Instance Deployment with GitHub Actions and Terraform
+# terraform_ec2_github_actions
 
 This project demonstrates how to use GitHub Actions to automatically deploy an EC2 instance on AWS using Terraform.
 
