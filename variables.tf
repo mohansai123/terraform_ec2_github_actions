@@ -14,14 +14,9 @@ variable "availability_zone" {
   default     = "ap-south-1a"  # Replace with your desired availability zone
 }
 
-resource "aws_iam_instance_profile" "example" {
-  name = "s3_user_profile"
-  # Add other necessary configurations
-}
-
-resource "aws_instance" "example" {
-  # Other instance configurations
-  iam_instance_profile = aws_iam_instance_profile.example.name
+variable "iam_instance_profile" {
+  description = "EC2 instance IAM instance profile name"
+  default     = "s3-user"  # Update with a valid instance profile name
 }
 
 variable "key_name" {
