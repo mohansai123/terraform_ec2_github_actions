@@ -24,11 +24,6 @@ resource "aws_instance" "example" {
   iam_instance_profile = aws_iam_instance_profile.example.name
 }
 
-variable "iam_instance_profile" {
-  description = "EC2 instance IAM instance profile name"
-  default     = "s3-user"  # Update with a valid instance profile name
-}
-
 variable "key_name" {
   description = "EC2 instance key pair name"
   default     = "public-cli-keypair"  # Update with a valid key name
