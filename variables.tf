@@ -16,7 +16,7 @@ variable "availability_zone" {
 
 variable "iam_instance_profile" {
   description = "EC2 instance IAM instance profile name"
-  default     = "dev-group"  # Update with a valid instance profile name
+  default     = "s3-user"  # Update with a valid instance profile name
 }
 
 variable "key_name" {
