@@ -14,11 +14,6 @@ variable "availability_zone" {
   default     = "ap-south-1a"  # Replace with your desired availability zone
 }
 
-variable "iam_instance_profile" {
-  description = "EC2 instance IAM instance profile name"
-  default     = "sai-terraform"  # Update with a valid instance profile name
-}
-
 variable "key_name" {
   description = "EC2 instance key pair name"
   default     = "public-cli-keypair"  # Update with a valid key name
